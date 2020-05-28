@@ -1,0 +1,19 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0"><meta name="theme-color" content="#ebc65a"><title>C语言编译过程 [ Welcome to LUGAR's Blog ] </title><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.6.0/styles/github.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface&amp;display=swap"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css"><meta name="generator" content="Hexo 4.2.0"></head><body><div class="mask-border"></div><div class="scrollbar"><div class="head"><div class="head__inner"><h1><a href="/">Welcome to LUGAR's Blog</a></h1><p></p></div></div><div class="paper-container"><div class="main"><div class="location-bar"><div class="line-1"><div class="horizontal-line" style="height: 3px"></div></div><div class="line-2"><div class="horizontal-line" style="height: 1px"></div></div><p class="text">C语言编译过程</p><div class="switch-button"><input class="container_toggle" type="checkbox" id="switch" name="mode"><label for="switch">Toggle</label></div><div class="line-3"><div class="horizontal-line" style="height: 1px"></div></div></div><div class="main__2-col"><article class="post-view__article"><div class="article__infomation"><div class="posts__item"><h2><a href="">C语言编译过程</a></h2><span class="post__date">2020-05-22</span></div></div><div class="article__content"><h1 id="C语言编译过程"><a href="#C语言编译过程" class="headerlink" title="C语言编译过程"></a>C语言编译过程</h1><h2 id="1-E-预编译"><a href="#1-E-预编译" class="headerlink" title="1. -E 预编译"></a>1. -E 预编译</h2><figure class="highlight shell"><table><tr><td class="code"><pre><code class="hljs shell">Gcc -E -o a.e a.c<br></code></pre></td></tr></table></figure>
+
+
+
+<blockquote>
+<p>预编译a.c文件，生成的目标文件名为a.e</p>
+<p>预编译是将include包含的头文件内容替换到C文件中，同时将代码中没用的注释部分删除（被单个空格替换）</p>
+</blockquote>
+<hr>
+<h2 id="2-S-汇编"><a href="#2-S-汇编" class="headerlink" title="2. -S 汇编"></a>2. -S 汇编</h2><blockquote>
+<p>-s就是将c语言转化为汇编语言</p>
+</blockquote>
+<h2 id="3-c-编译"><a href="#3-c-编译" class="headerlink" title="3.-c 编译"></a>3.-c 编译</h2><blockquote>
+<p>将代码编译为二进制的机器指令</p>
+</blockquote>
+<h2 id="4-链接"><a href="#4-链接" class="headerlink" title="4.链接"></a>4.链接</h2><blockquote>
+<p>Gcc没有任何参数，代表链接</p>
+</blockquote>
+</div></article><div class="post-view__sidebar"><div class="sidebar"><div class="tocbot"><h2>Toc</h2><div class="toc__content"></div></div><h2>Links</h2><div class="sidebar__link"><ul><li><a href="https://github.com/LuG3Zz" target="_blank" rel="noopener">Github</a></li><li><a href="https://space.bilibili.com/35391097" target="_blank" rel="noopener">bilibili</a></li></ul></div><h2>Archives</h2><div class="sidebar__archives"><ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a></li></ul></div><h2>Tags</h2><div class="sidebar__tags"></div></div></div></div><div class="horizontal-line" style="height: 1px"></div><div class="main__bottom"><div class="pre-next"><a class="pre-button" href="/2020/05/26/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99/">面向对象设计原则</a><a class="next-button" href="/2020/05/21/%E4%BA%86%E8%A7%A3%E5%9F%BA%E6%9C%ACMarkdown%E8%AF%AD%E6%B3%95/">了解基本Markdown语法</a></div></div></div></div><div class="footer"><span>©️2019-2020 Designed By <strong><a href="https://github.com/OfficialYoungX" target="_blank" rel="noopener">RandomYang</a></strong> Powered By </span><a href="https://hexo.io" target="_blank" rel="noopener">hexo</a></div></div><div class="darkmode-mask" id="darkmode-mask"></div><div class="sidebar__button"></div></body><script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script><script src="https://cdn.bootcss.com/highlight.js/9.6.0/highlight.min.js"></script><script src="/js/paper.js"></script><script src="/js/toc.js"></script></html>
