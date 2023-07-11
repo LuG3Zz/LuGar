@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Website of BrownLUGAR</title>
+    <link>https://example.com/</link>
+    <description>Recent content on Website of BrownLUGAR</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 15 Mar 2023 15:19:51 +0800</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>操作系统原理</title>
+      <link>https://example.com/post/os/</link>
+      <pubDate>Wed, 15 Mar 2023 15:19:51 +0800</pubDate>
+      
+      <guid>https://example.com/post/os/</guid>
+      
+        <description>操作系统的关键技术 硬件环境 主要关注的硬件：
+中央处理器(cpu) 内存 硬盘 其他硬件（作为设备处理） 中央处理器 系统核心,负责指令的解释执行，以及过程的推进。
+cpu 由运算器，控制器，一系列的寄存器以及高速缓存构成</description>
+      
+    </item>
+    
+    <item>
+      <title>Welcome</title>
+      <link>https://example.com/post/welcome/</link>
+      <pubDate>Tue, 14 Mar 2023 21:42:08 +0800</pubDate>
+      
+      <guid>https://example.com/post/welcome/</guid>
+      
+        <description>hello world 你好！
+print(&amp;#34;hello&amp;#34;) </description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.com/archives/</link>
+      <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/archives/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>
