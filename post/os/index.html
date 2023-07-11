@@ -2,9 +2,9 @@
 <html
   dir="ltr"
   lang="zh"
-  data-theme=""
+  data-theme="dark"
   
-    class="html theme--light"
+    class="html theme--dark"
   
 ><head>
   <title>
@@ -18,7 +18,7 @@
   </title>
 
   
-  <meta charset="utf-8" /><meta name="generator" content="Hugo 0.110.0"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta charset="utf-8" /><meta name="generator" content="Hugo 0.112.3"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
   <meta name="author" content="Brown LUGAR" />
   <meta
     name="description"
@@ -30,8 +30,8 @@
     
     <link
       rel="stylesheet"
-      href="/scss/main.min.5794be192d21535bdd301561e043a96b6adbad2b5c08279deff459e4661c613f.css"
-      integrity="sha256-V5S&#43;GS0hU1vdMBVh4EOpa2rbrStcCCed7/RZ5GYcYT8="
+      href="/scss/main.min.146a7ddfa5c93adbe900cda14308950908a085489a94009d3d2dfe77dc17f851.css"
+      integrity="sha256-FGp936XJOtvpAM2hQwiVCQighUialACdPS3&#43;d9wX&#43;FE="
       crossorigin="anonymous"
       type="text/css"
     />
@@ -45,6 +45,16 @@
     crossorigin="anonymous"
     type="text/css"
   />
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/css/syntax.min.ab0fecf3b3c7beae21d444f869cd2fdb195179464112d8a86f23dab199f80222.css"
+      integrity="sha256-qw/s87PHvq4h1ET4ac0v2xlReUZBEtiobyPasZn4AiI="
+      crossorigin="anonymous"
+      media="screen"
+    />
   
   
   <link
@@ -132,6 +142,8 @@ cpu 由运算器，控制器，一系列的寄存器以及高速缓存构成" />
 
 
 
+
+
   
   
   
@@ -196,8 +208,12 @@ cpu 由运算器，控制器，一系列的寄存器以及高速缓存构成" />
 
     ,
         "url" : "https:\/\/example.com\/post\/os\/",
-        "wordCount" : "68",
-        "genre" : [ ],
+        "wordCount" : "87",
+        "genre" : [ 
+      
+      "计算机"
+
+    ],
         "keywords" : [ ]
     }
   </script>
@@ -208,7 +224,7 @@ cpu 由运算器，控制器，一系列的寄存器以及高速缓存构成" />
     <div class="wrapper">
       <aside
         
-          class="wrapper__sidebar"
+          class="wrapper__sidebar wrapper__sidebar--hidden"
         
       ><div
   class="sidebar
@@ -241,7 +257,19 @@ cpu 由运算器，控制器，一系列的寄存器以及高速缓存构成" />
             aria-label="Bilibili"
             title="Bilibili"
           >
-            <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+            <i class="fas fa-bilibili fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://github.com/LuG3Zz"
+            target="_blank"
+            rel="noopener me"
+            aria-label="GitHub"
+            title="GitHub"
+          >
+            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
           </a>
         </li>
       
@@ -268,7 +296,7 @@ cpu 由运算器，控制器，一系列的寄存器以及高速缓存构成" />
 </aside>
       <main
         
-          class="wrapper__main"
+          class="wrapper__main wrapper__main--fullscreen"
         
       >
         <header class="header"><div
@@ -293,7 +321,7 @@ cpu 由运算器，控制器，一系列的寄存器以及高速缓存构成" />
               href="/"
               
               title=""
-              >Home</a
+              >主页</a
             >
           </li>
         
@@ -304,10 +332,10 @@ cpu 由运算器，控制器，一系列的寄存器以及高速缓存构成" />
           <li class="nav__list-item">
             <a
               
-              href="post/"
+              href="/post"
               
               title=""
-              >Archives</a
+              >最新文章</a
             >
           </li>
         
@@ -321,7 +349,7 @@ cpu 由运算器，控制器，一系列的寄存器以及高速缓存构成" />
               href="/tags/"
               
               title=""
-              >Tags</a
+              >标签</a
             >
           </li>
         
@@ -335,7 +363,35 @@ cpu 由运算器，控制器，一系列的寄存器以及高速缓存构成" />
               href="/categories/"
               
               title=""
-              >Categories</a
+              >类别</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/series/"
+              
+              title=""
+              >系列</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/archives"
+              
+              title=""
+              >归档</a
             >
           </li>
         
@@ -383,7 +439,10 @@ cpu 由运算器，控制器，一系列的寄存器以及高速缓存构成" />
             <span class="post__meta-text"></span>
           </li>
         </ul>
-      <h1 id="操作系统的关键技术">操作系统的关键技术</h1>
+      <div class="alert">
+      <div class="alert__indicator">!</div>
+      
+    </div><h1 id="操作系统的关键技术">操作系统的关键技术</h1>
 <h2 id="硬件环境">硬件环境</h2>
 <p>主要关注的硬件：</p>
 <ol>
@@ -400,22 +459,23 @@ cpu 由运算器，控制器，一系列的寄存器以及高速缓存构成" />
 <li>运算器：实现指令中的算术和逻辑运算</li>
 <li>控制器：负责控制程序运行的流程</li>
 <li>寄存器：具有最快的访问速度</li>
-<li>高速缓存:处于cpu和内存之间，速度快于内存，低于寄存器<br>
+<li>高速缓存:处于 cpu 和内存之间，速度快于内存，低于寄存器<br>
 为了保证操作系统不被用户程序破坏或者执行错误指令，系统设计了两种状态：</li>
 </ol>
 </blockquote>
 <ol>
 <li>管态：：操作系统管理程序运行的状态，较高的特权级别，又称为特权态（特态）、系统态可以执行全部指令（包括特权指令），可以使用所有资源，并具有改变处理器状态的能力。</li>
-<li>目态:用户程序运行时的状态，较低的特权级别，又称为普通态（普态）、用户态，只有非特权指令能执行。</li>
-</ol>
+<li>目态:用户程序运行时的状态，较低的特权级别，又称为普通态（普态）、用户态，只有非特权指令能执行。
 <blockquote>
 <p>两者状态：<br>
-管态&mdash;(设置psw)&ndash;&gt;目态<br>
-|_____&lt;-(中断)____|</p>
+管态&mdash;(设置 psw)&ndash;&gt;目态<br>
+|<strong>_</strong>&lt;-(中断)____|</p>
 </blockquote>
+</li>
+</ol>
 <p>程序状态字(psw)是一种特殊寄存器，表明系统当前的工作状态</p>
 <ol>
-<li>cpu的工作状态码：指明管态还是目态</li>
+<li>cpu 的工作状态码：指明管态还是目态</li>
 <li>条件码：反应指令执行后的结果特征</li>
 <li>中断屏蔽码：指出是否允许中断</li>
 </ol>
@@ -423,7 +483,7 @@ cpu 由运算器，控制器，一系列的寄存器以及高速缓存构成" />
 <p>用户在程序中调用操作系统所提供的一些子功能（程序接口），由特殊的机器指令实现，是操作系统提供给编程人员的唯一接口，还将系统转入管态。</p>
 <h2 id="储存系统">储存系统</h2>
 <h3 id="重要性">重要性：</h3>
-<p>任何程序、数据必须占用主存空间后才能执行，因此存储系统的性能直接影响系统的性能。操作系统内设计存储的可以分为五个层次：寄存器、高速缓存cache、内存、外存、离线存储。</p>
+<p>任何程序、数据必须占用主存空间后才能执行，因此存储系统的性能直接影响系统的性能。操作系统内设计存储的可以分为五个层次：寄存器、高速缓存 cache、内存、外存、离线存储。</p>
 <h3 id="局部性">局部性：</h3>
 <ol>
 <li>程序执行时，有很多的循环和子程序调用，一旦进入这样的程序段，就会重复存取相同的指令集合。</li>
@@ -437,13 +497,13 @@ cpu 由运算器，控制器，一系列的寄存器以及高速缓存构成" />
 <li>中断寄存器：记录中断</li>
 <li>中断字： 中断寄存器的内容</li>
 <li>系统堆栈: 在内存开辟的一块区域，用于临时保存现场</li>
-<li>关中断：cpu的psw的中断允许位已被消除，不允许cpu响应中断</li>
-<li>开中断： 设置psw的中断允许位,cpu可以接受中断</li>
+<li>关中断：cpu 的 psw 的中断允许位已被消除，不允许 cpu 响应中断</li>
+<li>开中断： 设置 psw 的中断允许位,cpu 可以接受中断</li>
 <li>开中断和关中断是为了保证某些程序执行的原子性</li>
-<li>中断屏蔽：封锁部分中断，允许其他部分的中断仍能得到响应。比如：psw可以设置优先级。</li>
+<li>中断屏蔽：封锁部分中断，允许其他部分的中断仍能得到响应。比如：psw 可以设置优先级。</li>
 </ul>
 <h3 id="运行机制">运行机制：</h3>
-<p>中断机制是操作系统得以正常工作的最重要的手段，它使得OS可以捕获普通程序发出的系统功能调用，及时处理设备的中断请求，防止用户程序中破坏性的活动等</p>
+<p>中断机制是操作系统得以正常工作的最重要的手段，它使得 OS 可以捕获普通程序发出的系统功能调用，及时处理设备的中断请求，防止用户程序中破坏性的活动等</p>
 <h3 id="分类体系">分类体系：</h3>
 <ol>
 <li>强迫性和自愿性中断</li>
@@ -459,7 +519,7 @@ cpu 由运算器，控制器，一系列的寄存器以及高速缓存构成" />
 </li>
 <li>自愿性：用户在程序中有意识安排的中断，是由于用户在编制程序时因为要求操作系统提供服务，有意使用“访管”指令或系统调用，使中断发生
 <ul>
-<li>执行I/O，创建进程，分配内存。</li>
+<li>执行 I/O，创建进程，分配内存。</li>
 <li>信号量操作，发送/接收消息。</li>
 </ul>
 </li>
@@ -467,7 +527,7 @@ cpu 由运算器，控制器，一系列的寄存器以及高速缓存构成" />
 <ol start="2">
 <li>外中断和内中断
 <ul>
-<li>外中断：来自处理机和内存外部，包括I/O中断、时钟中断等，也称中断。</li>
+<li>外中断：来自处理机和内存外部，包括 I/O 中断、时钟中断等，也称中断。</li>
 <li>与外中断相反，比如溢出、系统调用等，也称陷阱。</li>
 </ul>
 </li>
@@ -483,8 +543,21 @@ cpu 由运算器，控制器，一系列的寄存器以及高速缓存构成" />
 </li>
 </ol>
 <h2 id="缓冲技术">缓冲技术</h2>
+
+
+
+<h3></h3>
+<ul>
+  
+    <li><a href="/post/os/">操作系统原理</a></li>
+  
+</ul>
 </div>
     <div class="post__footer">
+      
+        <span><a class="category" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/">计算机</a></span>
+
+
       
 
       

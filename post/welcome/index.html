@@ -2,9 +2,9 @@
 <html
   dir="ltr"
   lang="zh"
-  data-theme=""
+  data-theme="dark"
   
-    class="html theme--light"
+    class="html theme--dark"
   
 ><head>
   <title>
@@ -18,7 +18,7 @@
   </title>
 
   
-  <meta charset="utf-8" /><meta name="generator" content="Hugo 0.110.0"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta charset="utf-8" /><meta name="generator" content="Hugo 0.112.3"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
   <meta name="author" content="Brown LUGAR" />
   <meta
     name="description"
@@ -30,8 +30,8 @@
     
     <link
       rel="stylesheet"
-      href="/scss/main.min.5794be192d21535bdd301561e043a96b6adbad2b5c08279deff459e4661c613f.css"
-      integrity="sha256-V5S&#43;GS0hU1vdMBVh4EOpa2rbrStcCCed7/RZ5GYcYT8="
+      href="/scss/main.min.146a7ddfa5c93adbe900cda14308950908a085489a94009d3d2dfe77dc17f851.css"
+      integrity="sha256-FGp936XJOtvpAM2hQwiVCQighUialACdPS3&#43;d9wX&#43;FE="
       crossorigin="anonymous"
       type="text/css"
     />
@@ -45,6 +45,16 @@
     crossorigin="anonymous"
     type="text/css"
   />
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/css/syntax.min.ab0fecf3b3c7beae21d444f869cd2fdb195179464112d8a86f23dab199f80222.css"
+      integrity="sha256-qw/s87PHvq4h1ET4ac0v2xlReUZBEtiobyPasZn4AiI="
+      crossorigin="anonymous"
+      media="screen"
+    />
   
   
   <link
@@ -114,19 +124,20 @@
   
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Welcome"/>
-<meta name="twitter:description" content="记录一下第一篇博客 这是我的第一篇博客，以后会在此记录一些学习笔记，以及一些有意思的事。
-便于自己复习回忆。 也是倒逼自己学习时有所产出,不至于“走马观花式的学习”,“学习留痕”。 如果我的分享能帮到其他人， 我也会非常开心。 "/>
+<meta name="twitter:description" content="hello world 你好！
+print(&#34;hello&#34;) "/>
 
 
 
   
   <meta property="og:title" content="Welcome" />
-<meta property="og:description" content="记录一下第一篇博客 这是我的第一篇博客，以后会在此记录一些学习笔记，以及一些有意思的事。
-便于自己复习回忆。 也是倒逼自己学习时有所产出,不至于“走马观花式的学习”,“学习留痕”。 如果我的分享能帮到其他人， 我也会非常开心。 " />
+<meta property="og:description" content="hello world 你好！
+print(&#34;hello&#34;) " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://example.com/post/welcome/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2023-03-14T21:42:08+08:00" />
 <meta property="article:modified_time" content="2023-03-14T21:42:08+08:00" /><meta property="og:site_name" content="Brown LUGAR" />
+
 
 
 
@@ -144,7 +155,7 @@
         "alternativeHeadline": "",
         "description": "
       
-        记录一下第一篇博客 这是我的第一篇博客，以后会在此记录一些学习笔记，以及一些有意思的事。\n便于自己复习回忆。 也是倒逼自己学习时有所产出,不至于“走马观花式的学习”,“学习留痕”。 如果我的分享能帮到其他人， 我也会非常开心。 
+        hello world 你好！\nprint(\u0026#34;hello\u0026#34;) 
 
 
       
@@ -194,7 +205,7 @@
 
     ,
         "url" : "https:\/\/example.com\/post\/welcome\/",
-        "wordCount" : "6",
+        "wordCount" : "4",
         "genre" : [ ],
         "keywords" : [ ]
     }
@@ -206,7 +217,7 @@
     <div class="wrapper">
       <aside
         
-          class="wrapper__sidebar"
+          class="wrapper__sidebar wrapper__sidebar--hidden"
         
       ><div
   class="sidebar
@@ -239,7 +250,19 @@
             aria-label="Bilibili"
             title="Bilibili"
           >
-            <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+            <i class="fas fa-bilibili fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://github.com/LuG3Zz"
+            target="_blank"
+            rel="noopener me"
+            aria-label="GitHub"
+            title="GitHub"
+          >
+            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
           </a>
         </li>
       
@@ -266,7 +289,7 @@
 </aside>
       <main
         
-          class="wrapper__main"
+          class="wrapper__main wrapper__main--fullscreen"
         
       >
         <header class="header"><div
@@ -291,7 +314,7 @@
               href="/"
               
               title=""
-              >Home</a
+              >主页</a
             >
           </li>
         
@@ -302,10 +325,10 @@
           <li class="nav__list-item">
             <a
               
-              href="post/"
+              href="/post"
               
               title=""
-              >Archives</a
+              >最新文章</a
             >
           </li>
         
@@ -319,7 +342,7 @@
               href="/tags/"
               
               title=""
-              >Tags</a
+              >标签</a
             >
           </li>
         
@@ -333,7 +356,35 @@
               href="/categories/"
               
               title=""
-              >Categories</a
+              >类别</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/series/"
+              
+              title=""
+              >系列</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/archives"
+              
+              title=""
+              >归档</a
             >
           </li>
         
@@ -381,14 +432,14 @@
             <span class="post__meta-text"></span>
           </li>
         </ul>
-      <h2 id="记录一下第一篇博客">记录一下第一篇博客</h2>
-<p>这是我的第一篇博客，以后会在此记录一些学习笔记，以及一些有意思的事。</p>
-<ol>
-<li>便于自己复习回忆。</li>
-<li>也是倒逼自己学习时有所产出,不至于“走马观花式的学习”,“学习留痕”。</li>
-<li>如果我的分享能帮到其他人， 我也会非常开心。</li>
-</ol>
-</div>
+      <div class="alert">
+      <div class="alert__indicator">!</div>
+      
+    </div><h2 id="hello-world">hello world</h2>
+<p>你好！</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;hello&#34;</span><span class="p">)</span>
+</span></span></code></pre></div></div>
     <div class="post__footer">
       
 
